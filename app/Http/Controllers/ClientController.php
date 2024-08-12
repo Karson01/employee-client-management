@@ -11,12 +11,12 @@ class ClientController extends Controller
     public function index(){
         //fetch all products data
         //$products = Client::orderBy('id','desc')->get();
-        $products = DB::table('client')->get();
-        
-        print_r($products);
-
+        $products = DB::table('client')->get();        
+        // print_r($products);
         //pass products data to view and load list view
-        return view('client.index', ['products' => $products]);
+        //return $products;
+        return view('admin.index', ['products' => $products]);
+        
     }
     
     public function show($id){
@@ -24,12 +24,12 @@ class ClientController extends Controller
         $product = Client::find($id);
         
         //pass products data to view and load list view
-        return view('client.show', ['product' => $product]);
+        return view('admin.show', ['product' => $product]);
     }
     
     public function add(){
         //load form view
-        return view('client.add');
+        return view('admin.add');
     }
     
     public function insert(Request $request){
@@ -46,7 +46,7 @@ class ClientController extends Controller
         Client::create($productData);
         
  
-        return redirect()->route('client.index')->with('message','Product details added successfully!');
+        return redirect()->route('admin.index')->with('message','Product details added successfully!');
     }
     
     public function edit($id){
@@ -54,7 +54,7 @@ class ClientController extends Controller
         $product = Client::find($id);
         
         //load form view
-        return view('client.edit', ['product' => $product]);
+        return view('admin.edit', ['product' => $product]);
     }
     
     public function update($id, Request $request){
@@ -71,14 +71,14 @@ class ClientController extends Controller
         Client::find($id)->update($productData);
         
  
-        return redirect()->route('client.index')->with('message','Product details updated successfully!');
+        return redirect()->route('admin.index')->with('message','Product details updated successfully!');
     }
     
     public function delete($id){
         //update product data
         Client::find($id)->delete();
         
-        return redirect()->route('client.index')->with('message','Product details deleted successfully!');
+        return redirect()->route('admin.index')->with('message','Product details deleted successfully!');
     }
    
 

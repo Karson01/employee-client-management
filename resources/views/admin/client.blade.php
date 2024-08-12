@@ -1,5 +1,5 @@
 
-@extends('client.layouts.layout')
+@extends('admin.layouts.layout')
 
 @section("title", "SIXWEBSOFT")
 

@@ -1,5 +1,5 @@
 
-@extends('client.layouts.layout')
+@extends('admin.layouts.layout')
 
 @section("title", "SIXWEBSOFT")
 
@@ -12,10 +12,10 @@
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Zone List</h4>
+                           <h4 class="card-title">User Permission List</h4>
                         </div>
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="ri-user-add-line"></i> ADD</button>
+                        
 
                      </div>
                      <div class="iq-card-body">
@@ -47,8 +47,8 @@
                            <table id="user-list-table" class="table table-striped table-borderless mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>Zone Name</th>
-                                   
+                                    <th>User Name</th>
+                                    <th>Permission</th>
                                     <th>Action</th>
                                  </tr>
                              </thead>
@@ -56,10 +56,10 @@
                                  <tr>
                                     
                                     <td>Anna Sthesia</td>
-                                    
+                                    <td>Client</td>
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -68,11 +68,11 @@
                                  <tr>
                                     
                                     <td>Brock Lee</td>
-                                    
+                                    <td>Employee</td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -81,10 +81,10 @@
                                  <tr>
                                     
                                     <td>Dan Druff</td>
-                                    
+                                    <td>Employee</td>
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -93,11 +93,11 @@
                                  <tr>
                                     
                                     <td>Hans Olo</td>
-                                    
+                                    <td>Client</td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -107,10 +107,10 @@
                                  <tr>
                                     
                                     <td>Eric Shun</td>
-                                    
+                                    <td>Client</td>
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -120,10 +120,10 @@
                                  <tr>
                                     
                                     <td>Marge Arita</td>
-                                    
+                                    <td>Employee</td>
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -162,40 +162,7 @@
    </div>
    <!-- Wrapper END -->
     
-   <!-- Large modal -->                         
-   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title">Zone Details</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <form>
-            <div class="modal-body">
-               <div class="new-user-info">
-                  
-                     <div class="row">
-                        <div class="form-group col-md-6">
-                           <label for="fname"> Zone Name:</label>
-                           <input type="text" class="form-control" id="fname" placeholder="Zone Name">
-                        </div>
-                        
-                        
-                     </div>
-                     
-                  
-               </div>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-            </form>
-         </div>
-      </div>
-   </div>
+   
 
     
 @endsection

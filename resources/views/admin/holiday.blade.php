@@ -1,5 +1,5 @@
 
-@extends('client.layouts.layout')
+@extends('admin.layouts.layout')
 
 @section("title", "SIXWEBSOFT")
 
@@ -12,7 +12,7 @@
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Client List</h4>
+                           <h4 class="card-title">Holiday List</h4>
                         </div>
 
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="ri-user-add-line"></i> ADD</button>
@@ -47,26 +47,19 @@
                            <table id="user-list-table" class="table table-striped table-borderless mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>Client Name</th>
-                                    <th>Contract with</th>
-                                    <th>Centro di costo</th>
-                                    <th>Zone</th>
-                                    <th>Reported issue</th>
+                                    <th>Holiday Name</th>
+                                   
                                     <th>Action</th>
                                  </tr>
                              </thead>
                              <tbody>
                                  <tr>
                                     
-                                    <td>Anna Sthesia</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge dark-icon-light iq-bg-primary">Active</span></td>
+                                 <td>2024-01-01</td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                         
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -74,17 +67,12 @@
                                  </tr>
                                  <tr>
                                     
-                                    <td>Brock Lee</td>
-                                    
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge iq-bg-warning">Pending</span></td>
+                                 <td>2024-01-15</td>
                                     
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -92,15 +80,11 @@
                                  </tr>
                                  <tr>
                                     
-                                    <td>Dan Druff</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge iq-bg-danger">Pending</span></td>
+                                 <td>2024-04-01</td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -108,15 +92,12 @@
                                  </tr>
                                  <tr>
                                     
-                                    <td>Hans Olo</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge  dark-icon-light iq-bg-primary">Active</span></td>
+                                 <td>2024-04-25</td>
+                                    
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                         
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -125,15 +106,11 @@
                                  
                                  <tr>
                                     
-                                    <td>Eric Shun</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Brazil</td>
-                                    <td><span class="badge iq-bg-info">Pending</span></td>
+                                 <td>2024-05-05</td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -142,15 +119,11 @@
                                  
                                  <tr>
                                     
-                                    <td>Marge Arita</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Africa</td>
-                                    <td><span class="badge iq-bg-success">Complite</span></td>
-                                   
+                                    <td>2024-08-15</td>
+                                    
                                     <td>
                                        <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
+                                          
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
                                        </div>
@@ -194,79 +167,21 @@
       <div class="modal-dialog modal-lg">
          <div class="modal-content">
             <div class="modal-header">
-               <h5 class="modal-title">Client Details</h5>
+               <h5 class="modal-title">Holiday Details</h5>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <form  method="POST" enctype="multipart/form-data" id="add-user-form">
-            @csrf
+            <form>
             <div class="modal-body">
                <div class="new-user-info">
                   
                      <div class="row">
                         <div class="form-group col-md-6">
-                           <label for="fname"> Name:</label>
-                           <input type="text" class="form-control" id="name" name="name" placeholder="First Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="lname">VAT:</label>
-                           <input type="text" class="form-control" id="lname" placeholder="VAT">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="add1">Indirizzo fatturazione :</label>
-                           <input type="text" class="form-control" id="add1" placeholder="Indirizzo fatturazione">
+                           <label for="fname"> Holiday Name:</label>
+                           <input type="text" class="form-control" id="fname" placeholder="Holiday Name">
                         </div>
                         
-                        <div class="form-group col-sm-6">
-                           <label>Centro di costo :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Centro di costo</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-sm-6">
-                           <label>Contract with :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Contract with</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-sm-6">
-                           <label>Zone :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Zone</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="mobno">Indirizzo negozio :</label>
-                           <input type="text" class="form-control" id="mobno" placeholder="Indirizzo negozio">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="altconno">Referente:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Referente">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="altconno">Tel:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Tel">
-                        </div>
-                        <div class="form-group col-md-6">
-                           <label for="email">Email:</label>
-                           <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
                         
                      </div>
                      
@@ -275,54 +190,12 @@
             </div>
             <div class="modal-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="submit" name='submit' id='submit' class="btn btn-primary">Save changes</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
             </div>
             </form>
          </div>
       </div>
    </div>
-
-   <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    
-   <script type="text/javascript">
-      $(document).ready(function(){
-        
-         $('#submit').click(function(e){
-
-            
-            e.preventDefault(); // this prevents the form from submitting
-            $.ajax({
-            url: '/clientlist',
-            type: "post",
-            data: {'name':$('input[name=name]').val(), '_token': $('input[name=_token]').val()},
-            dataType: 'JSON',
-            success: function (data) {
-               console.log(data); // this is good
-            }
-            });
-         });
-
-         $('#detailsgrid').DataTable({
-            "bProcessing": true,
-            "serverSide": true,
-            "responsive": true,
-            "ajax":{
-               url :"/clientlist", // json datasource
-               type: "get",  // type of method  ,GET/POST/DELETE
-               error: function(){
-               $("#detailsgrid").css("display","none");
-               }
-            }
-         });
-
-
-      });
-   </script>
-
 
     
 @endsection

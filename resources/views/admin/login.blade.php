@@ -25,13 +25,13 @@
       <!-- loader END -->
         <!-- Sign in Start -->
         <section class="sign-in-page">
-            <div class="container bg-white mt-50 p-0" style="margin:100px;">
+            <div class="container bg-white mt-10 p-0" style="margin:100px;">
                 <div class="row no-gutters">
                     <div class="col-sm-6 align-self-center">
                         <div class="sign-in-from">
                             <h1 class="mb-0 dark-signin">Sign in</h1>
                             <p>Enter your email address and password to access admin panel.</p>
-                            <form class="mt-4"  action="{{url('user/dashboard')}}">
+                            <form class="mt-4"  action="{{url('dashboard')}}">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" class="form-control mb-0" id="exampleInputEmail1" placeholder="Enter email">
@@ -61,13 +61,13 @@
                     </div>
                     <div class="col-sm-6 text-center" style="background-color: #fff;">
                         <div class="sign-in-detail1 text-white">
-                            <a class="sign-in-logo mb-5" href="#">LOGO</a>
+                            <!--a class="sign-in-logo mb-5" href="#">LOGO</a-->
                             <div class="slick-slider11" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
-                                <!--div class="item">
-                                    <img src="{{ asset('../../../asset/images/login/1.png') }}" class="img-fluid mb-4" alt="logo">
+                                <div class="item">
+                                    <img src="{{ asset('../../../asset/images/page-img/40.png') }}" class="img-fluid mb-4" alt="logo">
                                     <h4 class="mb-1 text-white">Manage your orders</h4>
                                     <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                                </div-->
+                                </div>
                                 <!--div class="item">
                                     <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
                                     <h4 class="mb-1 text-white">Manage your orders</h4>

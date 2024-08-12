@@ -1,5 +1,5 @@
 
-@extends('client.layouts.layout')
+@extends('admin.layouts.layout')
 
 @section("title", "SIXWEBSOFT")
 
@@ -12,10 +12,10 @@
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Employee List</h4>
+                           <h4 class="card-title">CCNL List</h4>
                         </div>
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl"><i class="ri-user-add-line"></i> ADD</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="ri-user-add-line"></i> ADD</button>
 
                      </div>
                      <div class="iq-card-body">
@@ -47,13 +47,8 @@
                            <table id="user-list-table" class="table table-striped table-borderless mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>Employee Name</th>
-                                    <th>Code</th>
-                                    <th>Contract with</th>
-                                    <th>Main Shop</th>
-                                    <th>Hr month</th>
-                                    <th>Request of time stamp</th>
-                                    <th>Request of vacation</th>
+                                    <th>CCNL Name</th>
+                                   
                                     <th>Action</th>
                                  </tr>
                              </thead>
@@ -61,12 +56,6 @@
                                  <tr>
                                     
                                     <td>Anna Sthesia</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge dark-icon-light iq-bg-primary">Active</span></td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
@@ -80,13 +69,6 @@
                                     
                                     <td>Brock Lee</td>
                                     
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge iq-bg-warning">Pending</span></td>
-                                    
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
@@ -99,12 +81,6 @@
                                  <tr>
                                     
                                     <td>Dan Druff</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge iq-bg-danger">Pending</span></td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
@@ -117,12 +93,7 @@
                                  <tr>
                                     
                                     <td>Hans Olo</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge  dark-icon-light iq-bg-primary">Active</span></td>
+                                    
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
@@ -136,12 +107,6 @@
                                  <tr>
                                     
                                     <td>Eric Shun</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Brazil</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge iq-bg-info">Pending</span></td>
                                     
                                     <td>
                                        <div class="flex align-items-center list-user-action">
@@ -155,13 +120,7 @@
                                  <tr>
                                     
                                     <td>Marge Arita</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Africa</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="badge iq-bg-success">Complite</span></td>
-                                   
+                                    
                                     <td>
                                        <div class="flex align-items-center list-user-action">
                                           <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
@@ -204,11 +163,11 @@
    <!-- Wrapper END -->
     
    <!-- Large modal -->                         
-   <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"  aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-lg">
          <div class="modal-content">
             <div class="modal-header">
-               <h5 class="modal-title">Employee Details</h5>
+               <h5 class="modal-title">CCNL Details</h5>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
                </button>
@@ -218,94 +177,9 @@
                <div class="new-user-info">
                   
                      <div class="row">
-                        <div class="form-group col-md-4">
-                           <label for="fname"> Name:</label>
-                           <input type="text" class="form-control" id="fname" placeholder="First Name">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="lname">Sur Name:</label>
-                           <input type="text" class="form-control" id="lname" placeholder="sur name">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="add1">Codice Fiscale :</label>
-                           <input type="text" class="form-control" id="add1" placeholder="Codice Fiscalee">
-                        </div>
-                        
-                        <div class="form-group col-sm-4">
-                           <label>Negozio principale :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Negozio principale</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        
-                        <div class="form-group col-md-4">
-                           <label for="mobno">tel phone :</label>
-                           <input type="text" class="form-control" id="mobno" placeholder="telefono">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="email">Email:</label>
-                           <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Mansione:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Mansione">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Tel:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Tel">
-                        </div>
-                        <div class="form-group col-sm-4">
-                           <label>Contract with :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Contract with</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Tipe of contract :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Tipe of contract">
-                        </div>
-                        <div class="form-group col-sm-4">
-                           <label>CCNL :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select CCNL</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
-                           </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Livello :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Livello">
-                        </div>
-
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Ore contratto :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Ore contratto
-">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Orario notturno :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Orario notturno">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Data assunzione :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Data assunzione">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="altconno">Data scadenza :</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Data scadenza">
+                        <div class="form-group col-md-6">
+                           <label for="fname"> CCNL Name:</label>
+                           <input type="text" class="form-control" id="fname" placeholder="CCNL Name">
                         </div>
                         
                         
