@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Client extends Model
+class ClientWork extends Model
 {
     use HasFactory;
     protected $primaryKey = 'id';
-    protected $table = 'client';
+    protected $table = 'client_work';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name','vat','indirizzo_fatturazione','consorzio_id','contract_id','zone_id','indirizzo_negozio','referente','tel','email','is_active','created_by','updated_by'
+        'id', 'client_id', 'employee_id', 'check_date', 'check_in1', 'user_in_type1', 'user_in_id1', 'check_out1', 'user_out_type1', 'user_out_id1', 'is_active', 'created_at', 'updated_at'
     ];
-
 }

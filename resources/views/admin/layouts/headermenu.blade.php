@@ -33,10 +33,10 @@
          <!-- Sidebar  -->
          <div class="iq-sidebar">
             <div class="iq-sidebar-logo d-flex justify-content-between">
-               <a href="index.html">
-               <div class="iq-light-logo">
+               <a href="#">
+               <!--div class="iq-light-logo">
                   <img src="images/logo.gif" class="img-fluid" alt="">
-               </div>
+               </div-->
                <div class="iq-dark-logo">
                   <img src="{{ asset('../../../asset/images/logo_lara.png') }}" class="img-fluid" alt="">
                </div>

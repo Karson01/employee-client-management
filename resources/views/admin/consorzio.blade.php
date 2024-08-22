@@ -15,21 +15,13 @@
                            <h4 class="card-title">Consorzio List</h4>
                         </div>
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="ri-user-add-line"></i> ADD</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".consorzio-modal"><i class="ri-user-add-line"></i> ADD</button>
 
                      </div>
                      <div class="iq-card-body">
                         <div class="table-responsive">
                            <div class="row justify-content-between">
-                              <div class="col-sm-12 col-md-6">
-                                 <div id="user_list_datatable_info" class="dataTables_filter">
-                                    <form class="mr-3 position-relative">
-                                       <div class="form-group mb-0">
-                                          <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table">
-                                       </div>
-                                    </form>
-                                 </div>
-                              </div>
+                              
                               <!--div class="col-sm-12 col-md-6">
                                  <div class="user-list-files d-flex float-right">
                                     <a class="iq-bg-primary" href="javascript:void();" >
@@ -44,115 +36,18 @@
                                    </div>
                               </div-->
                            </div>
-                           <table id="user-list-table" class="table table-striped table-borderless mt-4" role="grid" aria-describedby="user-list-page-info">
+                           <table id="consorzioDataTable" class="table table-striped table-borderless mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>Consorzio Name</th>
-                                   
+                                    <th>Slno</th>
+                                    <th>Consorzio Name</th>                                   
                                     <th>Action</th>
                                  </tr>
                              </thead>
-                             <tbody>
-                                 <tr>
-                                    
-                                    <td>Anna Sthesia</td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Brock Lee</td>
-                                    
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                         
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Dan Druff</td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Hans Olo</td>
-                                    
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                                 <tr>
-                                    
-                                    <td>Eric Shun</td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                         
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                                 <tr>
-                                    
-                                    <td>Marge Arita</td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                         
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                             </tbody>
+                            
                            </table>
                         </div>
-                           <div class="row justify-content-between mt-3">
-                              <div id="user-list-page-info" class="col-md-6">
-                                 <span>Showing 1 to 5 of 5 entries</span>
-                              </div>
-                              <div class="col-md-6">
-                                 <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-end mb-0">
-                                       <li class="page-item disabled">
-                                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                       </li>
-                                       <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                       <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                       <li class="page-item">
-                                          <a class="page-link" href="#">Next</a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </div>
-                           </div>
+                           
                      </div>
                   </div>
             </div>
@@ -163,7 +58,7 @@
    <!-- Wrapper END -->
     
    <!-- Large modal -->                         
-   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"  aria-hidden="true">
+   <div class="modal fade consorzio-modal" tabindex="-1" role="dialog"  aria-hidden="true">
       <div class="modal-dialog modal-lg">
          <div class="modal-content">
             <div class="modal-header">
@@ -172,26 +67,67 @@
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <form>
-            <div class="modal-body">
-               <div class="new-user-info">
+            <form action="{{ route('store-consorzio') }}" method="POST" id="consorzioform">
+               <div class="modal-body">   
+                  <div class="new-user-info">
                   
-                     <div class="row">
-                        <div class="form-group col-md-6">
-                           <label for="fname"> Consorzio Name:</label>
-                           <input type="text" class="form-control" id="fname" placeholder="Consorzio Name">
+                        <div class="row">
+                           <div class="form-group col-md-6">
+                              <label for="fname"> Consorzio Name <span style="color:red">*</span> :</label>
+                              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Consorzio Name">
+                              <input type="hidden" class="form-control" id="consorzio_id" name="consorzio_id">
+                              <span id="err_consorzio" style="color:red;"></span>
+                           </div>
+                           
+                           
                         </div>
                         
-                        
-                     </div>
                      
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" id="submit" class="btn btn-primary">Save changes</button>
+                  <button type="submit" id="updateForm" style="display: none;" class="btn btn-primary">Update</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="modal fade consorzio-delete-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-mg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Delete Confirmation</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>           
+
+            <form  action="{{ route('store-consorzio') }}" method="POST" id="consorziodeleteform">
+               <div class="modal-body">   
+                  <div class="new-user-info">
+                     <p class="confirmation-message"> 
+                        Are you sure you want to delete this item? 
+                     </p>
+                  
+                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                     <input type="hidden" class="form-control" id="consorzio_del_id" name="consorzio_del_id">
+                     <input type="hidden" value='1' class="form-control" id="is_active" name="is_active">
+                     
+                           
+                        
+                     
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" id="deletesubmit" class="btn btn-danger">Delete</button>
                   
                </div>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
             </form>
          </div>
       </div>
@@ -199,3 +135,147 @@
 
     
 @endsection
+
+@include("admin.layouts.footer")
+
+<script type="text/javascript">
+   $(document).ready( function () {          
+        
+         
+      var consorzioDataTable = $('#consorzioDataTable').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                  "dataType": "json",
+                  "type": "POST",
+                  "data":{ _token: $('meta[name="csrf-token"]').attr('content') }
+            },
+            "ajax": 'consorzio-list',
+            "columns": [{
+                     "data": "id",
+                     render: function (data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1;
+                     }
+                  },
+                  {
+                     "data": "name"
+                  },
+                  {
+                     "data": null,
+                        "render": function(data, type, row, meta) {
+                           return `<div class="btn btn-sm btn-primary updateconsorzioBtn" data-toggle="modal" data-target=".consorzio-modal"  data-value='${JSON.stringify(row)}'><i class="ri-pencil-line"></i></div>
+                           <div class="btn btn-sm btn-danger deleteconsorzioBtn" data-toggle="modal" data-target=".consorzio-delete-modal" data-value='${JSON.stringify(row.id)}'><i class="ri-delete-bin-line"></i></div>
+                           `;
+                        }
+                  }
+            ],
+            "rowId": "id"
+         });
+
+
+         $(document).on('click', '.updateconsorzioBtn', function() {
+            var data = $(this).data('value');
+            $("#name").val(data.name);
+            $("#consorzio_id").val(data.id);
+            $("#err_consorzio").html('');
+            $("#updateForm").show();
+            $("#submit").hide();
+            $('#consorzioform').attr('action', '/admin/consorzio/' + data.id + '/update');
+         })
+
+         $(document).on('click', '.deleteconsorzioBtn', function() {
+            var data = $(this).data('value');
+                       
+            $("#consorzio_del_id").val(data);           
+            $('#consorziodeleteform').attr('action', '/admin/consorzio/' + data + '/delete');
+         })
+
+         $('#submit').click(function (event) {
+            
+            event.preventDefault();
+            if($("#name").val()==''){
+               $("#err_consorzio").html('Enter consorzio name !')
+               return false;
+            }
+            else{
+               $.ajax({
+                  url: "{{ route('store-consorzio') }}",
+                  type: 'POST',
+                  data: $("#consorzioform").serialize(),
+                  success: function (result) {
+                     console.log(result);
+                     $("#name").val('');
+                     swal("Success!", "Successfully Saved !", "success");
+                     setTimeout(function(){
+                        window.location.href="{{ route('consorzio') }}";
+                     },2000);
+
+                  
+                  },error:function(xhr,status,error){
+                     console.log(JSON.stringify(xhr,status,error));
+                  }
+               })
+            }
+         })
+
+
+         $('#updateForm').click(function (event) {
+            
+            var consorzio_id=$("#consorzio_id").val();
+
+            event.preventDefault();
+            if($("#name").val()==''){
+               $("#err_consorzio").html('Enter consorzio name !')
+               return false;
+            }
+            else{
+               $.ajax({
+                  url: '/admin/consorzio/' + consorzio_id + '/update',
+                  type: 'POST',
+                  data: $("#consorzioform").serialize(),
+                  success: function (result) {
+                     console.log(result);
+                     //$("#name").val('');
+                     swal("Success!", "Successfully updated !", "success");
+                     setTimeout(function(){
+                        window.location.href="{{ route('consorzio') }}";
+                     },2000);
+                  
+                  },error:function(xhr,status,error){
+                     console.log(JSON.stringify(xhr,status,error));
+                  }
+               })
+            }
+         })
+
+
+         $('#deletesubmit').click(function (event) {
+            
+            var consorzio_id= $("#consorzio_del_id").val();  
+
+            event.preventDefault();
+            $.ajax({
+               url: '/admin/consorzio/' + consorzio_id + '/delete',
+               type: 'POST',
+               data: $("#consorziodeleteform").serialize(),
+               success: function (result) {
+                  console.log(result);
+                  //$("#name").val('');
+                  swal("Success!", "Successfully deleted !", "success");
+                  setTimeout(function(){
+                     window.location.href="{{ route('consorzio') }}";
+                  },1000);
+               
+               },error:function(xhr,status,error){
+						console.log(JSON.stringify(xhr,status,error));
+					}
+            })
+         })
+
+
+        
+
+
+         
+    } );
+</script>

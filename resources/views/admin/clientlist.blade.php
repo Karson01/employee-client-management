@@ -58,133 +58,10 @@
                                     <th>Action</th>
                                  </tr>
                              </thead>
-                             <tbody>
                              
-
-                                 <tr>
-                                    
-                                    <td>Anna Sthesia</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge dark-icon-light iq-bg-primary">Active</span></td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Brock Lee</td>
-                                    
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge iq-bg-warning">Pending</span></td>
-                                    
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Dan Druff</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge iq-bg-danger">Pending</span></td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    
-                                    <td>Hans Olo</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>USA</td>
-                                    <td><span class="badge  dark-icon-light iq-bg-primary">Active</span></td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                                 <tr>
-                                    
-                                    <td>Eric Shun</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Brazil</td>
-                                    <td><span class="badge iq-bg-info">Pending</span></td>
-                                    
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                                 <tr>
-                                    
-                                    <td>Marge Arita</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Africa</td>
-                                    <td><span class="badge iq-bg-success">Complite</span></td>
-                                   
-                                    <td>
-                                       <div class="flex align-items-center list-user-action">
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#"><i class="ri-user-add-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
-                                          <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 
-                             </tbody>
                            </table>
                         </div>
-                           <div class="row justify-content-between mt-3">
-                              <div id="user-list-page-info" class="col-md-6">
-                                 <span>Showing 1 to 5 of 5 entries</span>
-                              </div>
-                              <div class="col-md-6">
-                                 <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-end mb-0">
-                                       <li class="page-item disabled">
-                                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                       </li>
-                                       <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                       <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                       <li class="page-item">
-                                          <a class="page-link" href="#">Next</a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </div>
-                           </div>
+                           
                      </div>
                   </div>
             </div>
@@ -207,8 +84,8 @@
                <span aria-hidden="true">&times;</span>
                </button>
             </div>
-            <form  method="POST" enctype="multipart/form-data" id="add-user-form">
-            @csrf
+            <form  action="{{ route('store-client') }}" method="POST" id="clientform">
+            
             <div class="modal-body">
                <div class="new-user-info">
                   
@@ -219,27 +96,25 @@
                         </div>
                         <div class="form-group col-md-6">
                            <label for="lname">VAT:</label>
-                           <input type="text" class="form-control" id="lname" placeholder="VAT">
+                           <input type="text" class="form-control" id="vat" placeholder="vat">
                         </div>
                         <div class="form-group col-md-6">
                            <label for="add1">Indirizzo fatturazione :</label>
-                           <input type="text" class="form-control" id="add1" placeholder="Indirizzo fatturazione">
+                           <input type="text" class="form-control" id="indirizzo_fatturazione"  name="indirizzo_fatturazione"  placeholder="Indirizzo fatturazione">
                         </div>
                         
                         <div class="form-group col-sm-6">
                            <label>Centro di costo :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Centro di costo</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
+                           <select class="form-control" id="consorzio_id" name="consorzio_id">
+                              <option>Select consorzio</option>
+                              @foreach($consorzio as $consorziouser)
+                                 <option value="{{$consorziouser->id}}">{{ $consorziouser->name }}</option>
+                              @endforeach
                            </select>
                         </div>
                         <div class="form-group col-sm-6">
                            <label>Contract with :</label>
-                           <select class="form-control" id="selectcountry">
+                           <select class="form-control" id="contract_id" name="contract_id">
                               <option>Select Contract with</option>
                               <option>Caneda</option>
                               <option>Noida</option>
@@ -247,33 +122,35 @@
                               <option>India</option>
                               <option>Africa</option>
                            </select>
-                        </div>
+                        </div>                       
+
                         <div class="form-group col-sm-6">
                            <label>Zone :</label>
-                           <select class="form-control" id="selectcountry">
-                              <option>Select Zone</option>
-                              <option>Caneda</option>
-                              <option>Noida</option>
-                              <option >USA</option>
-                              <option>India</option>
-                              <option>Africa</option>
+                           <select class="form-control" id="zone_id" name="zone_id">
+                                                            
+                              <option value="">--- Select Zone ---</option>
+                              @foreach($zones as $user)
+                                 <option value="{{$user->id}}">{{ $user->name }}</option>
+                              @endforeach
+   
+                             
                            </select>
                         </div>
                         <div class="form-group col-md-6">
                            <label for="mobno">Indirizzo negozio :</label>
-                           <input type="text" class="form-control" id="mobno" placeholder="Indirizzo negozio">
+                           <input type="text" class="form-control" id="indirizzo_negozio" name="indirizzo_negozio" placeholder="Indirizzo negozio">
                         </div>
                         <div class="form-group col-md-6">
                            <label for="altconno">Referente:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Referente">
+                           <input type="text" class="form-control" id="referente" name="referente" placeholder="Referente">
                         </div>
                         <div class="form-group col-md-6">
                            <label for="altconno">Tel:</label>
-                           <input type="text" class="form-control" id="altconno" placeholder="Tel">
+                           <input type="text" class="form-control" id="tel" name="tel" placeholder="Tel">
                         </div>
                         <div class="form-group col-md-6">
                            <label for="email">Email:</label>
-                           <input type="email" class="form-control" id="email" placeholder="Email">
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                         </div>
                         
                      </div>
@@ -282,8 +159,12 @@
                </div>
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="submit" name='submit' id='submit' class="btn btn-primary">Save changes</button>
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                  <input type="hidden" class="form-control" id="client_id" name="client_id">
+
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" id="submit" class="btn btn-primary">Save changes</button>
+                  <button type="submit" id="updateForm" style="display: none;" class="btn btn-primary">Update</button>
             </div>
             </form>
          </div>
@@ -291,3 +172,95 @@
    </div>   
     
 @endsection
+
+@include("admin.layouts.footer")
+
+<script type="text/javascript">
+   $(document).ready( function () {          
+        
+        var clientDataTable = $('#clientDataTable').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                  "dataType": "json",
+                  "type": "POST",
+                  "data":{ _token: $('meta[name="csrf-token"]').attr('content') }
+            },
+            "ajax": 'client-list',
+            "columns": [{
+                     "data": "id"
+                  },
+                  {
+                     "data": "name"
+                  },
+                  {
+                     "data": null,
+                        "render": function(data, type, row, meta) {
+                           return `<div class="btn btn-sm btn-primary updateclientBtn" data-toggle="modal" data-target=".client-modal"  data-value='${JSON.stringify(row)}'><i class="ri-pencil-line"></i></div>
+                           <div class="btn btn-sm btn-danger deleteBtn" data-value='${JSON.stringify(row.id)}'><i class="ri-delete-bin-line"></i></div>
+                           `;
+                        }
+                  }
+            ],
+            "rowId": "id"
+         });
+
+         $(document).on('click', '.updateclientBtn', function() {
+            var data = $(this).data('value');
+            $("#name").val(data.name);
+            $("#client_id").val(data.id);
+            $("#updateForm").show();
+            $("#submit").hide();
+            $('#clientform').attr('action', '/admin/client/' + data.id + '/update');
+         })
+
+         $('#submit').click(function (event) {
+            
+            event.preventDefault();
+            $.ajax({
+               url: "{{ route('store-client') }}",
+               type: 'POST',
+               data: $("#clientform").serialize(),
+               success: function (result) {
+                  console.log(result);
+                  $("#name").val('');
+                  swal("Success!", "Successfully Saved !", "success");
+                  setTimeout(function(){
+                     window.location.href="{{ route('client') }}";
+                  },2000);
+
+               
+               },error:function(xhr,status,error){
+						console.log(JSON.stringify(xhr,status,error));
+					}
+            })
+         })
+
+
+         $('#updateForm').click(function (event) {
+            
+            var client_id=$("#client_id").val();
+
+            event.preventDefault();
+            $.ajax({
+               url: '/admin/client/' + client_id + '/update',
+               type: 'POST',
+               data: $("#clientform").serialize(),
+               success: function (result) {
+                  console.log(result);
+                  //$("#name").val('');
+                  swal("Success!", "Successfully updated !", "success");
+                  setTimeout(function(){
+                     window.location.href="{{ route('client') }}";
+                  },2000);
+               
+               },error:function(xhr,status,error){
+						console.log(JSON.stringify(xhr,status,error));
+					}
+            })
+         })
+
+
+         
+    } );
+</script>

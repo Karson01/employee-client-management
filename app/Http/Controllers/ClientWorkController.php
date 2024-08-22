@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Client;
+use App\Models\ClientWork;
 use \Yajra\Datatables\Datatables;
 use Illuminate\Support\Facades\DB;
 
-class ClientController extends Controller
+class ClientWorkController extends Controller
 {
     public function index(Request $request){
         /*//fetch all products data
@@ -20,7 +21,14 @@ class ClientController extends Controller
         return view('admin.client', ['zones' => $zones,'consorzio' => $consorzio]);*/
 
         //$client = Client::get();
-        $client = Client::where('is_active','!=',1)->get();
+        $client = DB::table('employee')
+                    ->leftjoin('client_work', 'employee.id', '=', 'client_work.employee_id')
+                    ->select('employee.name','employee.id')
+                    ->where('employee.is_active', '!=', 1)
+                    ->get();
+
+        
+       // $client = Client::where('is_active','!=',1)->get();
         if($request->ajax()) {
             $allData= DataTables::of($client)
             ->addIndexColumn()
@@ -33,7 +41,7 @@ class ClientController extends Controller
             ->make(true);
             return $allData;
         }
-        return compact('client');
+        return compact('client-work-entry');
         //return view('admin/client', compact('client'));
         
     }
@@ -57,6 +65,18 @@ class ClientController extends Controller
     public function storeclient(Request  $request)
     {
         
+        $isExist = ClientWork::select("*")
+        ->where("client_id", "yemmerich@example.net")
+        ->where("check_date", "yemmerich@example.net")
+        ->where("employee_id", "yemmerich@example.net")
+        ->exists();
+
+        if ($isExist) {
+        dd('Record is available.');
+        }else{
+        dd('Record is not available.');
+        }
+
         $client = new Client();       
         $client->name = $request['name'];  
         $client->vat = $request['vat'];  
@@ -162,11 +182,4 @@ class ClientController extends Controller
     {
         //
     }
-   
-
-    
-    
-
-    
-
 }
